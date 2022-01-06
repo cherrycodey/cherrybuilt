@@ -135,35 +135,7 @@ Publish Process
 		<ul>
 		<li>
 		<h2>With This Query: </br> </br>
-		 SELECT   Common.LNameFirst,
-             Common.LNameLast,
-             Common.LNameSuf,
-             Common.LEMail,
-             Common.LLicenseNum,
-             Licenses.LLicenseType,
-             Licenses.LLicenseExpires,
-             Licenses.LRenewalPaid,
-             Licenses.LLicenseStatus,             
-             Common_1.LCoName,
-             Common_1.LAdd1,
-             Common_1.LCity,
-             Common_1.LState,
-             Common_1.LZip,
-             Common_1.LTelephone,
-             Common_1.LFaxPhone
-             
-    FROM     Common
-             INNER JOIN
-             dbo.Licenses
-             ON Common.LLicenseNum = Licenses.LLicenseNum
-             LEFT OUTER JOIN
-             Common AS Common_1
-             ON Licenses.LCoLicNum = Common_1.LLicenseNum
-    WHERE    (Licenses.LLicenseType ='T')
-             OR (Licenses.LLicenseType = 'S')
-             OR (Licenses.LLicenseType ='A')
-             OR (Licenses.LLicenseType ='Q')
-    ORDER BY Common.LLicenseNum;
+		 SELECT   
 	</h2>
 	</li>
 	</ul>
